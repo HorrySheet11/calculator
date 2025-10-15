@@ -5,6 +5,7 @@ let operator = null;
 const display = document.querySelector('.display');
 const history = document.querySelector('.history');
 const dot = document.getElementById('dot');
+const operatorButtons = document.querySelectorAll('.operator'); 
 
 function add(num1, num2) {
     return num1 + num2;
@@ -64,6 +65,7 @@ function store(){
     num1 = parseFloat(display.textContent);
     history.textContent = num1 + ' ' + operator;
     display.textContent = '0';
+    operatorButtons.forEach(btn => btn.disabled = true);
 }
 
 function calculate() {
@@ -79,4 +81,6 @@ function calculate() {
         display.textContent = num1 = divide(num1, num2);
     }
     dotDisable();
+    operatorButtons.forEach(btn => btn.disabled = false);
+
 }

@@ -77,6 +77,6 @@ footer>p>a{
     color:black;
 }
 
-#dot:disabled{
+button:disabled{
     background-color: rgb(160, 239, 242);
 }
