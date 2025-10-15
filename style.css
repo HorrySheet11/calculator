@@ -1,8 +1,47 @@
-html{
-  font-family: century-gothic, sans-serif;
-  text-align:center;
+html {
+    font-family: century-gothic, sans-serif;
+    text-align: center;
 }
 
-body{
-  background-color: rgb(6, 230, 238);
+body {
+    background-color: rgb(6, 230, 238);
+}
+
+.calculator {
+    display: inline-block;
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin-top: 20px;
+}
+
+.clear,
+.delete {
+    grid-column: span 2;
+}
+
+button{
+    font-family: inherit;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(6, 230, 238);
+    color: black;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+
+button:active{
+    transform: scale(0.9);
 }
