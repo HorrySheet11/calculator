@@ -13,7 +13,7 @@
         <div class="display">0</div>
         <div class="buttons">
             <button class="clear" onclick={clearDisplay()}>C</button>
-            <button class="delete" onclick=deleteText()>DEL</button>
+            <button class="delete" onclick='{deleteText();}'>DEL</button>
             <button class="number" onclick={updateDisplay(7)}>7</button>
             <button class="number" onclick={updateDisplay(8)}>8</button>
             <button class="number" onclick={updateDisplay(9)}>9</button>
@@ -26,7 +26,7 @@
             <button class="number" onclick={updateDisplay(2)}>2</button>
             <button class="number" onclick={updateDisplay(3)}>3</button>
             <button class="operator" onclick='operator="-";  store()'>-</button>
-            <button class="number" onclick='{updateDisplay(".")}'>.</button>
+            <button id='dot' class="number" onclick='{updateDisplay(".");dotDisable();}'>.</button>
             <button class="number" onclick={updateDisplay(0)}>0</button>
             <button class="equals" onclick=calculate()>=</button>
             <button class="operator" onclick='operator="+";  store()'>+</button>
