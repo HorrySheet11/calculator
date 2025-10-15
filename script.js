@@ -54,12 +54,12 @@ function calculate() {
     num2 = parseFloat(display.textContent);
     history.textContent = `${num1} ${operator} ${num2} = `;
     if (operator === '+') {
-        display.textContent = add(num1, num2);
+        display.textContent = num1 = add(num1, num2);
     } else if (operator === '-') {
-        display.textContent = subtract(num1, num2);
+        display.textContent = num1 = subtract(num1, num2);
     } else if (operator === '*') {
-        display.textContent = multiply(num1, num2);
+        display.textContent = num1 = multiply(num1, num2);
     } else if (operator === '÷') {
-        display.textContent = divide(num1, num2);
+        display.textContent = num1 = divide(num1, num2);
     }
 }

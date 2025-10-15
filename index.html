@@ -26,12 +26,15 @@
             <button class="number" onclick={updateDisplay(2)}>2</button>
             <button class="number" onclick={updateDisplay(3)}>3</button>
             <button class="operator" onclick='operator="-";  store()'>-</button>
-            <button class="number" onclick={updateDisplay(".")}>.</button>
+            <button class="number" onclick='{updateDisplay(".")}'>.</button>
             <button class="number" onclick={updateDisplay(0)}>0</button>
             <button class="equals" onclick=calculate()>=</button>
             <button class="operator" onclick='operator="+";  store()'>+</button>
         </div>
     </section>
+    <footer>
+        <p>Copyright | All Rights Reserved | © <a href="https://github.com/HorrySheet11" target="_blank" >HorrySheet11</a></p>
+    </footer>
 </body>
 <script src="script.js"></script>
 </html>
