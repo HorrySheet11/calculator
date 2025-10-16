@@ -12,24 +12,24 @@
         <div class='history'></div>
         <div class="display">0</div>
         <div class="buttons">
-            <button class="clear" onclick={clearDisplay()}>C</button>
-            <button class="delete" onclick='{deleteText();}'>DEL</button>
-            <button class="number" onclick={updateDisplay(7)}>7</button>
-            <button class="number" onclick={updateDisplay(8)}>8</button>
-            <button class="number" onclick={updateDisplay(9)}>9</button>
-            <button class="operator" onclick='operator="÷";  store()'>÷</button>
-            <button class="number" onclick={updateDisplay(4)}>4</button>
-            <button class="number" onclick={updateDisplay(5)}>5</button>
-            <button class="number" onclick={updateDisplay(6)}>6</button>
-            <button class="operator" onclick='operator="*";  store()'>x</button>
-            <button class="number" onclick={updateDisplay(1)}>1</button>
-            <button class="number" onclick={updateDisplay(2)}>2</button>
-            <button class="number" onclick={updateDisplay(3)}>3</button>
-            <button class="operator" onclick='operator="-";  store()'>-</button>
-            <button id='dot' class="number" onclick='{updateDisplay(".");dotDisable();}'>.</button>
+            <button class="clear" onclick={clearDisplay()} accesskey="">C</button>
+            <button class="delete" onclick='{deleteText();}' accesskey="ba">DEL</button>
+            <button class="number" onclick={updateDisplay(7)} accesskey="7">7</button>
+            <button class="number" onclick={updateDisplay(8)} accesskey="8">8</button>
+            <button class="number" onclick={updateDisplay(9)} accesskey="9">9</button>
+            <button class="operator" onclick='operator="÷";  store()' accesskey="/">÷</button>
+            <button class="number" onclick={updateDisplay(4)} accesskey="4">4</button>
+            <button class="number" onclick={updateDisplay(5)} accesskey="5">5</button>
+            <button class="number" onclick={updateDisplay(6)} accesskey="6">6</button>
+            <button class="operator" onclick='operator="*";  store()' accesskey="*">x</button>
+            <button class="number" onclick={updateDisplay(1)} accesskey="1">1</button>
+            <button class="number" onclick={updateDisplay(2)} accesskey="2">2</button>
+            <button class="number" onclick={updateDisplay(3)} accesskey="3">3</button>
+            <button class="operator" onclick='operator="-";  store()' accesskey="-">-</button>
+            <button id='dot' class="number" onclick='{updateDisplay(".");dotDisable();}' accesskey=".">.</button>
             <button class="number" onclick={updateDisplay(0)}>0</button>
-            <button class="equals" onclick=calculate()>=</button>
-            <button class="operator" onclick='operator="+";  store()'>+</button>
+            <button class="equals" onclick=calculate() accesskey="">=</button>
+            <button class="operator" onclick='operator="+";  store()' accesskey="+">+</button>
         </div>
     </section>
     <footer>
